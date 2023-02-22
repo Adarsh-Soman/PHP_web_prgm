@@ -1,0 +1,15 @@
+body{
+	background-color: Lightgrey:
+	color: blue;
+}
+ol{
+	background-color: black;
+	color: white;
+}
+p{
+	background-color: blue;
+	color: white;
+}
+table,th,td{
+	border: 1px solid;
+}
