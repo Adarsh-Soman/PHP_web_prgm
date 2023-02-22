@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+		<style>
+			body{
+		
+				margin-top: 40px;
+		
+			}
+			.container{
+			  
+				position: relative;
+				padding: 50px;
+				width: 700px;
+				height: 670px;
+				box-shadow: 10px 10px 10px rgba(0, 0, 0, .1),
+							-10px -10px 10px rgba(255, 255, 255, 1),
+							inset 10px 10px 10px  rgba(0, 0, 0, .1),
+							inset -10px -10px 10px rgba(255, 255, 255, 1);
+				border-radius: 10px;
+			}
+		</style>
+</head>
+<body>
+	<div class="container">
+		<center><h1><b>Book Form</b></h1></center>
+		<form method="post" action="book_insert.php">
+			
+			<div class="form-group">
+				<label for="bookname">BOOK NAME</label>
+				<input type="text" class="form-control input-sm" id="bookname" name="bookname" placeholder="Enter the bookname">
+			</div>
+			<div class="form-group">
+				<label for="author">AUTHOR</label>
+				<input type="text" class="form-control input-sm" id="author" name="author" placeholder="Author">
+			</div>
+			
+			<div class="form-group">
+				<label for="edition">EDITION</label>
+				<input type="number" class="form-control input-sm" id="edition" name="edition" placeholder="Edition">
+			</div>
+
+			<div class="form-group">
+				<label for="publisher">PUBLISHER</label>
+				<input type="text" class="form-control input-sm" id="publisher" name="publisher" placeholder="Publisher">
+			</div>
+
+			<button type="submit" class="btn btn-primary">Register</button><hr>
+            
+		</form>
+        <h2><center>SEARCH</center></h2>
+        <form action="search.php" method="post">
+            <div class="form-group">
+                <label for="author">AUTHOR</label>
+                <input type="text" class="form-control input-sm" id="author" name="author" placeholder="Author">
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button><br><br>
+        </form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Electricity Bill Calculator</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<style>
+			body{
+		
+				margin-top: 40px;
+		
+			}
+			.container{
+			  
+				position: relative;
+				padding: 50px;
+				width: 700px;
+				height: 500px;
+				box-shadow: 10px 10px 10px rgba(0, 0, 0, .1),
+							-10px -10px 10px rgba(255, 255, 255, 1),
+							inset 10px 10px 10px  rgba(0, 0, 0, .1),
+							inset -10px -10px 10px rgba(255, 255, 255, 1);
+				border-radius: 10px;
+			}
+		</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Electricity Bill Calculator</h1>
+		<form method="post" action="calculate_bill.php">
+			<div class="form-group">
+				<label for="username">Previous Reading:</label>
+				<input type="number" class="form-control input-sm" id="previous_reading" name="previous_reading" placeholder="previous_reading" required>
+			</div>
+			<div class="form-group">
+				<label for="email">Current Reading:</label>
+				<input type="number" class="form-control input-sm" id="current_reading" name="current_reading" placeholder="current_reading " required>
+			</div>
+			
+			<button type="submit" class="btn btn-primary">Calculate Bill</button>
+		</form>
+	</div>
+</body>
+</html>
